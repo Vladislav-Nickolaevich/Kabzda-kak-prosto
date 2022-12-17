@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const MyComponent = () => {
+const UncontrolledRating = () => {
     let [value, setValue] = useState(0)
     return (
         <div>
@@ -26,4 +26,4 @@ const Star = (props:StarType) => {
     )
 }
 
-export default MyComponent;
+export default UncontrolledRating;
