@@ -3,6 +3,7 @@ import './App.css';
 import Accordion from "./components/Accordion/Accordion";
 import MyComponent from "./components/MyComponent/MyComponent";
 import OnOff from "./components/OnOff/OnOff";
+import UncontrolledAccordion from "./components/UncontroledAccordion/UncontroledAccordion";
 
 function App() {
     // let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
@@ -16,7 +17,8 @@ function App() {
             {/*           }}/>*/}
 
             {/*<MyComponent/>*/}
-            <OnOff onChange={setSwitchOn} on={switchOn}/>
+            {/*<OnOff onChange={setSwitchOn} on={switchOn}/>*/}
+            <UncontrolledAccordion titleValue={'Numbers'}/>
         </div>
     );
 }
