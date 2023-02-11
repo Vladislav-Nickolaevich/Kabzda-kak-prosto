@@ -5,6 +5,7 @@ import UncontrolledRating from "./components/UncontrolledRating/UncontrolledRati
 import OnOff from "./components/OnOff/OnOff";
 import UncontrolledAccordion from "./components/UncontroledAccordion/UncontroledAccordion";
 import {Rating, RatingValueType} from "./components/Rating/Rating";
+import {ControlledInputWithFixedValue} from "./components/ControlledInput/ControlledInputWithFixedValue";
 
 function App() {
     // let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
@@ -21,7 +22,8 @@ function App() {
             {/*<UncontrolledRating/>*/}
             {/*<OnOff onChange={setSwitchOn} on={switchOn}/>*/}
             {/*<UncontrolledAccordion titleValue={'Numbers'}/>*/}
-            <Rating value={ratingValue} onClick={setRatingValue}/>
+            {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
+            <ControlledInputWithFixedValue value={'Value of input'}/>
         </div>
     );
 }
