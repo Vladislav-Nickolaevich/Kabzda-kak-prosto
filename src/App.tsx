@@ -8,6 +8,7 @@ import {Rating, RatingValueType} from "./components/Rating/Rating";
 import {ControlledInputWithFixedValue} from "./components/ControlledInput/ControlledInputWithFixedValue";
 import {UncontrolledInput} from "./components/UncontrolledInput/UncontrolledInput";
 import {GetValueOfInputByClicked} from "./components/GetValueByClicked/GetValueOfInputByClicked";
+import { ControlledSelect } from './components/ControlledSelect/ControlledSelect';
 
 function App() {
     // let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
@@ -27,7 +28,8 @@ function App() {
             {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
             {/*<ControlledInputWithFixedValue value={'Value of input'}/>*/}
             {/*<UncontrolledInput/>*/}
-            <GetValueOfInputByClicked/>
+            {/*<GetValueOfInputByClicked/>*/}
+            <ControlledSelect/>
         </div>
     );
 }
