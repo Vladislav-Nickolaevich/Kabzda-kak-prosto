@@ -10,26 +10,35 @@ import {UncontrolledInput} from "./components/UncontrolledInput/UncontrolledInpu
 import {GetValueOfInputByClicked} from "./components/GetValueByClicked/GetValueOfInputByClicked";
 import {ControlledSelect} from './components/ControlledSelect/ControlledSelect';
 import {Select} from "./components/Select/Select";
+import {CorrectSelect} from "./components/CorrectSelect/CorrectSelect";
 
+type ItemsType = {
+    title: string
+}
 function App() {
     // let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
     // let [switchOn, setSwitchOn] = useState<boolean>(true)
     // let [ratingValue, setRatingValue] = useState<RatingValueType>(0)
-    const [collapsedSelect, setCollapsedSelect] = useState<boolean>(true)
+    // const [collapsedSelect, setCollapsedSelect] = useState<boolean>(true)
     const names = [
-        {title:'Vlad', value: 1},
-        {title:'Katya', value: 2},
-        {title:'Alex', value: 3},
-        {title:'Anya', value: 4},
-        {title:'Vanya', value: 5}
+        {title:'Vlad', value: '1'},
+        {title:'Katya', value: '2'},
+        {title:'Alex', value: '3'},
+        {title:'Anya', value: '4'},
+        {title:'Vanya', value: '5'}
     ]
     // const onClickHandlerAccordion = (value: number) => console.log(value)
-    const [newTitle, setNewTitle] = useState('Names')
-    const onCLickHandlerSelect = (value: any) => {
-        setNewTitle(value)
-        setCollapsedSelect(!collapsedSelect)
-    }
-    const onChangeHandlerSelect = () => setCollapsedSelect(!collapsedSelect)
+    // const [newTitle, setNewTitle] = useState('Names')
+    // const onCLickHandlerSelect = (value: any) => {
+    //     setNewTitle(value)
+    //     setCollapsedSelect(!collapsedSelect)
+    // }
+    // const onChangeHandlerSelect = () => setCollapsedSelect(!collapsedSelect)
+
+    const [valueCorrectSelect, setValueCorrectSelect] = useState('1')
+    const onChangeCorrectSelect = (value:any) => setValueCorrectSelect(value)
+
+
     return (
         <div className="App">
             {/*<Accordion titleValue={'Menu'}*/}
@@ -50,11 +59,16 @@ function App() {
             {/*<ControlledSelect/>*/}
 
             {/*onClick={() => {}}*/}
-            <Select items={names}
-                    onClick={onCLickHandlerSelect}
-                    value={newTitle}
-                    onChange={onChangeHandlerSelect}
-                    collapsed={!collapsedSelect}/>
+            {/*<Select items={names}*/}
+            {/*        onClick={onCLickHandlerSelect}*/}
+            {/*        value={newTitle}*/}
+            {/*        onChange={onChangeHandlerSelect}*/}
+            {/*        collapsed={!collapsedSelect}*/}
+            {/*/>*/}
+            <CorrectSelect
+                value={valueCorrectSelect}
+                items={names}
+                onChange={onChangeCorrectSelect}/>
         </div>
     );
 }
