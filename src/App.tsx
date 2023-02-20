@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+ import React, {useState} from 'react';
 import './App.css';
 import Accordion from "./components/Accordion/Accordion";
 import UncontrolledRating from "./components/UncontrolledRating/UncontrolledRating";
@@ -51,7 +51,7 @@ function App() {
             {/*/>*/}
             {/*<UncontrolledRating/>*/}
             {/*<OnOff onChange={setSwitchOn} on={switchOn}/>*/}
-            {/*<UncontrolledAccordion titleValue={'Numbers'}/>*/}
+            <UncontrolledAccordion titleValue={'Numbers'}/>
             {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
             {/*<ControlledInputWithFixedValue value={'Value of input'}/>*/}
             {/*<UncontrolledInput/>*/}
@@ -65,10 +65,11 @@ function App() {
             {/*        onChange={onChangeHandlerSelect}*/}
             {/*        collapsed={!collapsedSelect}*/}
             {/*/>*/}
-            <CorrectSelect
-                value={valueCorrectSelect}
-                items={names}
-                onChange={onChangeCorrectSelect}/>
+            {/*<CorrectSelect*/}
+            {/*    value={valueCorrectSelect}*/}
+            {/*    items={names}*/}
+            {/*    onChange={onChangeCorrectSelect}*/}
+            {/*/>*/}
         </div>
     );
 }
