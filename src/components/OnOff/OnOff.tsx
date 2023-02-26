@@ -4,6 +4,7 @@ export type OnOffType = {
     on: boolean
     onChange: (on: boolean) => void
 }
+
 function OnOff(props: OnOffType) {
     const squareOne = {
         width: '30px',

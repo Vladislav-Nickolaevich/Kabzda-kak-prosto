@@ -11,6 +11,7 @@ import {GetValueOfInputByClicked} from "./components/GetValueByClicked/GetValueO
 import {ControlledSelect} from './components/ControlledSelect/ControlledSelect';
 import {Select} from "./components/Select/Select";
 import {CorrectSelect} from "./components/CorrectSelect/CorrectSelect";
+import FactorialUseMemo from './components/FactorialUseMemo/FactorialUseMemo';
 
 type ItemsType = {
     title: string
@@ -35,8 +36,8 @@ function App() {
     // }
     // const onChangeHandlerSelect = () => setCollapsedSelect(!collapsedSelect)
 
-    const [valueCorrectSelect, setValueCorrectSelect] = useState('1')
-    const onChangeCorrectSelect = (value:any) => setValueCorrectSelect(value)
+    // const [valueCorrectSelect, setValueCorrectSelect] = useState('1')
+    // const onChangeCorrectSelect = (value:any) => setValueCorrectSelect(value)
 
 
     return (
@@ -51,7 +52,7 @@ function App() {
             {/*/>*/}
             {/*<UncontrolledRating/>*/}
             {/*<OnOff onChange={setSwitchOn} on={switchOn}/>*/}
-            <UncontrolledAccordion titleValue={'Numbers'}/>
+            {/*<UncontrolledAccordion titleValue={'Numbers'}/>*/}
             {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
             {/*<ControlledInputWithFixedValue value={'Value of input'}/>*/}
             {/*<UncontrolledInput/>*/}
@@ -70,6 +71,7 @@ function App() {
             {/*    items={names}*/}
             {/*    onChange={onChangeCorrectSelect}*/}
             {/*/>*/}
+            <FactorialUseMemo/>
         </div>
     );
 }
