@@ -1,17 +1,14 @@
-import React, {useMemo, useState} from 'react';
+import React, {useCallback, useMemo, useState} from 'react';
 
 export const LikeUseCallback = () => {
     console.log('LikeUseCallback')
     const [counter, setCounter] = useState(0)
     const [books, setBooks] = useState(['React', 'JS', 'CSS', 'TS', 'HTML'])
 
-    const addBook = () => {
+
+    const memoizedAddBook = useCallback(() => {
         const newUsers = [...books, 'Angular ' + new Date().getTime()]
         setBooks(newUsers)
-    }
-
-    const memoizedAddBook = useMemo(() => {
-        return  addBook
     }, [books])
 
     return (
