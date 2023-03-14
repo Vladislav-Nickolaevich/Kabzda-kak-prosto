@@ -10,8 +10,9 @@ import {UncontrolledInput} from "./components/UncontrolledInput/UncontrolledInpu
 import {GetValueOfInputByClicked} from "./components/GetValueByClicked/GetValueOfInputByClicked";
 import {ControlledSelect} from './components/ControlledSelect/ControlledSelect';
 import {Select} from "./components/Select/Select";
-import {CorrectSelect} from "./components/CorrectSelect/CorrectSelect";
+import {CorrectSellect} from "./components/CorrectSellect/CorrectSellect";
 import FactorialUseMemo from './components/FactorialUseMemo/FactorialUseMemo';
+ import {LikeUseCallback} from "./components/LikeUseCallback/LikeUseCallback";
 
 type ItemsType = {
     title: string
@@ -66,12 +67,13 @@ function App() {
             {/*        onChange={onChangeHandlerSelect}*/}
             {/*        collapsed={!collapsedSelect}*/}
             {/*/>*/}
-            {/*<CorrectSelect*/}
+            {/*<CorrectSellect*/}
             {/*    value={valueCorrectSelect}*/}
             {/*    items={names}*/}
             {/*    onChange={onChangeCorrectSelect}*/}
             {/*/>*/}
-            <FactorialUseMemo/>
+            {/*<FactorialUseMemo/>*/}
+            <LikeUseCallback/>
         </div>
     );
 }

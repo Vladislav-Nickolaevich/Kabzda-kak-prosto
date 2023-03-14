@@ -1,5 +1,5 @@
 import React, {useState, KeyboardEvent, useEffect} from 'react';
-import styles from './CorrectSelect.module.css'
+import styles from './CorrectSellect.module.css'
 
 
 type ItemsType = {
@@ -12,7 +12,7 @@ type CorrectSelectType = {
     items: ItemsType[]
     onChange: (value: any) => void
 }
-export const CorrectSelect = (props: CorrectSelectType) => {
+export const CorrectSellect = (props: CorrectSelectType) => {
 
     const [active, setActive] = useState(false)
     const [hoveredElementValue, setHoveredElementValue] = useState(props.value)
