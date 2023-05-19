@@ -6,8 +6,8 @@ function generateDate() {
 }
 const UseState = () => {
     console.log('value')
-    const init = generateDate()
-    const [value, setValue] = useState(init)
+    // const init = generateDate()
+    const [value, setValue] = useState(generateDate)
     return (
         <div>
             <button onClick={() => setValue(value + 1)}>+</button>
