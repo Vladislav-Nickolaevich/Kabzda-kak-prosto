@@ -13,22 +13,24 @@ import {Select} from "./components/Select/Select";
 import {CorrectSellect} from "./components/CorrectSellect/CorrectSellect";
 import FactorialUseMemo from './components/FactorialUseMemo/FactorialUseMemo';
  import {LikeUseCallback} from "./components/LikeUseCallback/LikeUseCallback";
+ import UseState from "./components/UseState/UseState";
+ // import UseState from "./components/UseState/UseState";
 
-type ItemsType = {
-    title: string
-}
+// type ItemsType = {
+//     title: string
+// }
 function App() {
     // let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
     // let [switchOn, setSwitchOn] = useState<boolean>(true)
     // let [ratingValue, setRatingValue] = useState<RatingValueType>(0)
     // const [collapsedSelect, setCollapsedSelect] = useState<boolean>(true)
-    const names = [
-        {title:'Vlad', value: '1'},
-        {title:'Katya', value: '2'},
-        {title:'Alex', value: '3'},
-        {title:'Anya', value: '4'},
-        {title:'Vanya', value: '5'}
-    ]
+    // const names = [
+    //     {title:'Vlad', value: '1'},
+    //     {title:'Katya', value: '2'},
+    //     {title:'Alex', value: '3'},
+    //     {title:'Anya', value: '4'},
+    //     {title:'Vanya', value: '5'}
+    // ]
     // const onClickHandlerAccordion = (value: number) => console.log(value)
     // const [newTitle, setNewTitle] = useState('Names')
     // const onCLickHandlerSelect = (value: any) => {
@@ -73,7 +75,8 @@ function App() {
             {/*    onChange={onChangeCorrectSelect}*/}
             {/*/>*/}
             {/*<FactorialUseMemo/>*/}
-            <LikeUseCallback/>
+            {/*<LikeUseCallback/>*/}
+            <UseState/>
         </div>
     );
 }
