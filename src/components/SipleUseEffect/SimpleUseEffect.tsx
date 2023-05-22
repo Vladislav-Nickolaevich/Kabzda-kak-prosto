@@ -6,14 +6,17 @@ const SimpleUseEffect = () => {
 
     useEffect(() => {
         console.log('Every render')
+        document.title = count.toString()
     })
 
     useEffect(() => {
         console.log('Only first render')
+        document.title = count.toString()
     }, [])
 
     useEffect(() => {
         console.log('Render first time and other when count changes')
+        document.title = count.toString()
     }, [count])
     return (
         <div>
