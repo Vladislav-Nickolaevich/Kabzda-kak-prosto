@@ -16,6 +16,7 @@ import FactorialUseMemo from './components/FactorialUseMemo/FactorialUseMemo';
  import UseState from "./components/UseState/UseState";
  import SimpleUseEffect from "./components/SipleUseEffect/SimpleUseEffect";
  import UseEffectClock from "./components/useEffectClock/UseEffectClock";
+ import ClockSecond from "./components/ClockSecond/ClockSecond";
  // import UseState from "./components/UseState/UseState";
 
 // type ItemsType = {
@@ -80,7 +81,8 @@ function App() {
             {/*<LikeUseCallback/>*/}
             {/*<UseState/>*/}
             {/*<SimpleUseEffect/>*/}
-            <UseEffectClock/>
+            {/*<UseEffectClock/>*/}
+            <ClockSecond/>
         </div>
     );
 }
