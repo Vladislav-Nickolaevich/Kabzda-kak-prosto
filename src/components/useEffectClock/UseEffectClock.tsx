@@ -1,19 +1,24 @@
 import React, {useEffect, useState} from 'react';
 
 const UseEffectClock = () => {
-    let currentDate = new Date()
-    const [date, setDate] = useState(currentDate)
+    const [date, setDate] = useState(new Date())
+
     useEffect(() => {
       const timerId =  setInterval(() => {
             setDate(new Date())
         }, 1000)
         return () => clearInterval(timerId)
-    })
+    }, [])
+
+    const setZeroInTheBeginning = (n: number) =>  n < 10 ? '0' + n: n
+
     return (
         <div>
-            {date.getHours() + ':'}
-            {date.getMinutes() + ':'}
-            {date.getSeconds()}
+            <span>{setZeroInTheBeginning(date.getHours())}</span>
+            :
+            <span>{setZeroInTheBeginning(date.getMinutes())}</span>
+            :
+            <span>{setZeroInTheBeginning(date.getSeconds())}</span>
         </div>
     );
 };
